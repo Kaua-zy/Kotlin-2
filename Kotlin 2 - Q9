@@ -1,0 +1,16 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    print("Digite o ano que você nasceu: ")
+    val anoNascimento = readLine()!!.toInt()
+
+    val anoAtual = 2026
+    val idade = anoAtual - anoNascimento
+
+    if (idade >= 16) {
+        println("Você pode votar este ano.")
+    } else {
+        println("Você não pode votar esse ano, pois você é menor de idade.")
+    }
+}
+
