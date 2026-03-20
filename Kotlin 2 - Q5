@@ -1,0 +1,23 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    var soma = 0.0
+    val numeros = mutableListOf<Double>()
+
+    for (i in 1..6) {
+        println("Digite o $i número:")
+        val numero = readLine()!!.toDouble()
+            numeros.add(numero)
+            soma += numero
+        }
+            println("\nNúmeros informados:" )
+          for (num in numeros) {
+            println(num)
+        }
+            val media = soma / 6
+        println("\nMédia aritmética : $media")
+
+
+    }
+
+
