@@ -1,0 +1,24 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    print("Digite sua altura: ")
+    val altura = readLine()!!.toDouble()
+
+    print("Digite seu gênero (1 - Feminino | 2 - Masculino): ")
+    val genero = readLine()!!.toInt()
+
+    val pesoIdeal: Double
+
+    if (genero == 1) {
+        pesoIdeal = (62.1 * altura) - 44.7
+    } else if (genero == 2) {
+        pesoIdeal = (72.7 * altura) - 58
+    } else {
+        println("Gênero inválido!")
+        return
+    }
+
+    println("Seu peso ideal é: $pesoIdeal kg")
+}
+
+
