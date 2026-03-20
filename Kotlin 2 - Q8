@@ -1,0 +1,33 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+
+    var soma = 0.0
+    var contador = 0
+
+    while (contador < 4) {
+        print("Coloque um número (entre 0 e 10): ")
+        val numero = readLine()!!.toDouble()
+
+        if (numero > 0 && numero < 10) {
+            soma += numero
+            contador++
+        } else {
+            println("Valor inválido! Digite novamente.")
+        }
+    }
+
+    val media = soma / 4
+    println("\nMédia: $media")
+
+    if (media > 5) {
+        println("Você passou no teste")
+    } else {
+        println("Tente novamente")
+    }
+}
+
+
+
+
+
