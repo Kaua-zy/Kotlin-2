@@ -1,0 +1,32 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    print("Digite o primeiro número: ")
+    val num1 = readLine()!!.toInt()
+
+    print("Digite o segundo número: ")
+    val num2 = readLine()!!.toInt()
+
+    println("\nEscolha a operação:")
+    println("1 - Adição")
+    println("2 - Subtração")
+    println("3 - Divisão")
+    println("4 - Multiplicação")
+    print("Opção: ")
+
+    val operacao = readLine()!!.toInt()
+
+    val resultado = when (operacao) {
+        1 -> num1 + num2
+        2 -> num1 - num2
+        3 -> num1 / num2
+        4 -> num1 * num2
+        else -> {
+            println("Operação inválida!")
+            return
+        }
+    }
+
+    println("\nResultado: $resultado")
+}
+
